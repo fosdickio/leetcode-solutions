@@ -1,5 +1,8 @@
 # LeetCode Solutions
-Repository containing solutions to various LeetCode problems.
+
+[![Build Status](https://travis-ci.com/fosdickio/leetcode-solutions.svg?token=SF2sJ9D2NnsZgYTMXteG&branch=master)](https://travis-ci.com/fosdickio/leetcode-solutions)
+
+Repository containing solutions to various [LeetCode](https://leetcode.com/) problems.
 
 ## Requirements
 - Java 11
