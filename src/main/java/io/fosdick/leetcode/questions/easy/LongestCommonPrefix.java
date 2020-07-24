@@ -13,7 +13,7 @@ public class LongestCommonPrefix {
     /**
      * Horizontal scanning
      *   Time Complexity: O(n)
-     *   Space Complexity: O(1)
+     *   Space Complexity: O(n)
      */
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
