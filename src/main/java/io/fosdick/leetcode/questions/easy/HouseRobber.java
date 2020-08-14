@@ -16,9 +16,9 @@ import static java.lang.Integer.max;
 public class HouseRobber {
 
     /**
-     *
-     *   Time Complexity: O()
-     *   Space Complexity: O()
+     * Iteration
+     *   Time Complexity: O(n)
+     *   Space Complexity: O(1)
      */
     public int rob(int[] nums) {
         if (nums.length == 0) return 0;

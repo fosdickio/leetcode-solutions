@@ -7,25 +7,20 @@ import org.junit.jupiter.api.Test;
 
 class MaximumDepthOfBinaryTreeTest {
 
-    private SameTree sameTree;
+    private MaximumDepthOfBinaryTree maximumDepthOfBinaryTree;
 
     @BeforeEach
     public void setUp() {
-        this.sameTree = new SameTree();
+        this.maximumDepthOfBinaryTree = new MaximumDepthOfBinaryTree();
     }
 
     @Test
-    void maxDepth1() {
-        TreeNode tree1 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
-        TreeNode tree2 = new TreeNode(1, new TreeNode(2), new TreeNode(3));
-        Assertions.assertEquals(true, sameTree.isSameTree(tree1, tree2));
-    }
-
-    @Test
-    void maxDepth2() {
-        TreeNode tree1 = new TreeNode(1, new TreeNode(2), null);
-        TreeNode tree2 = new TreeNode(1, null, new TreeNode(2));
-        Assertions.assertEquals(false, sameTree.isSameTree(tree1, tree2));
+    void maxDepth() {
+        TreeNode tree = new TreeNode(3,
+                new TreeNode(9),
+                new TreeNode(20, new TreeNode(15), new TreeNode(7))
+        );
+        Assertions.assertEquals(3, this.maximumDepthOfBinaryTree.maxDepth(tree));
     }
 
 }
